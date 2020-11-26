@@ -21,14 +21,15 @@ export default function Home({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark {
-      totalCount
       edges {
         node {
           id
           frontmatter {
+            description
+            image_gallery
             title
           }
-          excerpt
+          excerpt(pruneLength: 30)
         }
       }
     }
