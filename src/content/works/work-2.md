@@ -6,3 +6,5 @@ image_gallery:
 
 ---
 Work 2 Text
+
+I'm edited.
