@@ -1,15 +1,35 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
 export default function Home({ data }) {
-  return <Layout> {data.site.siteMetadata.title} Hello world!</Layout>
+  console.log(data)
+  return (
+    <Layout>
+      <div>
+        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <h3>{node.frontmatter.title} </h3>
+            <p>{node.excerpt}</p>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  )
 }
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          excerpt
+        }
       }
     }
   }
