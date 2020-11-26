@@ -21,4 +21,4 @@ fields:
   config: {}
   label: Image Gallery
 pages:
-- works/work-1.md
+- src/content/works/work-1.md
