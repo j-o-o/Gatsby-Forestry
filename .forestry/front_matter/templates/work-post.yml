@@ -22,3 +22,4 @@ fields:
   label: Image Gallery
 pages:
 - src/content/works/work-1.md
+- src/content/works/work-2.md
