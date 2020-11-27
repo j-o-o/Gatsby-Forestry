@@ -20,5 +20,3 @@ fields:
   type: image_gallery
   config: {}
   label: Image Gallery
-pages:
-- src/content/pages/the-struggle-is-part-of-the-story.md
