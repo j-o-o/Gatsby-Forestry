@@ -9,9 +9,6 @@ sections:
   label: About
   create: all
   match: "**/*"
-- type: document
-  path: src/content
-  label: About
 - type: directory
   path: src/content/works
   label: Works

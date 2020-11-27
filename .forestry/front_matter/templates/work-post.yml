@@ -2,23 +2,23 @@
 label: Work post
 hide_body: false
 fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: description
-    type: textarea
-    default: ""
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Description
-  - name: image_gallery
-    type: image_gallery
-    config: {}
-    label: Image Gallery
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: image_gallery
+  type: image_gallery
+  config: {}
+  label: Image Gallery
 pages:
-  - src/content/works/websites/the-struggle-is-part-of-the-story.md
+- src/content/works/Websites/the-struggle-is-part-of-the-story.md
