@@ -6,15 +6,14 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-      <div>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <ul>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>{node.frontmatter.title} </h3>
+          <li key={node.id}>
+            <a>{node.frontmatter.title}</a>
             <p>{node.excerpt}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </Layout>
   )
 }
@@ -29,7 +28,7 @@ export const query = graphql`
             image_gallery
             title
           }
-          excerpt(pruneLength: 30)
+          excerpt(pruneLength: 20)
         }
       }
     }
