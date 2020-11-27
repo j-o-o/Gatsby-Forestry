@@ -11,3 +11,5 @@ fields:
     schema:
       format: markdown
   label: Text
+pages:
+- src/content/about/about.md
