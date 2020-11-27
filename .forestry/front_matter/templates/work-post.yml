@@ -20,3 +20,5 @@ fields:
   type: image_gallery
   config: {}
   label: Image Gallery
+pages:
+- src/content/works/Websites/the-struggle-is-part-of-the-story.md
