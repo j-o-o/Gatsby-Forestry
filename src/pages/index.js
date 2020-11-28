@@ -11,6 +11,7 @@ export default function Home({ data }) {
           <li key={node.id}>
             <a>{node.frontmatter.title}</a>
             <p>{node.excerpt}</p>
+            <p>{node.image_gallery}</p>
           </li>
         ))}
       </ul>
