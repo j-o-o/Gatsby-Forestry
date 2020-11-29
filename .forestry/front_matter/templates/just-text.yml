@@ -1,4 +1,35 @@
 ---
 label: Just text
 hide_body: false
-fields: []
+fields:
+- name: tags
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Tags
+- name: tabs
+  type: field_group
+  config: {}
+  fields:
+  - name: tags
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Tags
+  label: Tabs
+- name: tabbbs
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tabus
