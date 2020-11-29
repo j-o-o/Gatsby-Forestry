@@ -21,4 +21,5 @@ fields:
   config: {}
   label: Image Gallery
 pages:
+- src/content/works/Graphics/irre-bauhaus.md
 - src/content/works/Websites/the-struggle-is-part-of-the-story.md
