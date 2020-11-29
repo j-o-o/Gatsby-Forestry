@@ -12,4 +12,5 @@ fields:
       format: markdown
   label: Text
 pages:
+- src/content/about/Teaching/teaching.md
 - src/content/about/about.md
