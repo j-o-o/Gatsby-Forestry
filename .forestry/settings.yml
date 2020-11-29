@@ -17,7 +17,7 @@ sections:
   - type: directory
     path: src/content/works/Websites
     label: Websites
-    create: all
+    create: documents
     match: "**/*"
 upload_dir: static/uploads
 public_path: "/static/uploads"
