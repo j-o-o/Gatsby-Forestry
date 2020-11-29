@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/content/about
   label: About
-  match: "**/*"
 - type: heading
   label: Page
 - type: directory
