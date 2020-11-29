@@ -2,34 +2,12 @@
 label: Just text
 hide_body: false
 fields:
-- name: tags
-  type: list
+- name: text
+  type: textarea
+  default: ''
   config:
-    use_select: false
-    min: 
-    max: 
-  label: Tags
-- name: tabs
-  type: field_group
-  config: {}
-  fields:
-  - name: tags
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Tags
-  label: Tabs
-- name: tabbbs
-  type: field_group_list
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Tabus
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
