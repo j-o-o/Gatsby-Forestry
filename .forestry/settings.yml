@@ -12,8 +12,6 @@ sections:
 - type: document
   path: src/content
   label: About
-- type: heading
-  label: Hello World
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
