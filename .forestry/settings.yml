@@ -6,14 +6,14 @@ webhook_url:
 sections:
 - type: heading
   label: Page
-- type: document
-  path: src/content/about
-  label: About
 - type: directory
   path: src/content/works
   label: Works
   create: all
   match: "**/*"
+- type: document
+  path: src/content/about
+  label: About
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
