@@ -11,5 +11,3 @@ fields:
     schema:
       format: markdown
   label: Text
-pages:
-- src/content/works/About.md
