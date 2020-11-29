@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Page
 - type: document
   path: src/content/about
   label: About
-- type: heading
-  label: Page
 - type: directory
   path: src/content/works
   label: Works
